@@ -1,0 +1,100 @@
+/*Main*/
+
+.main {
+    background: url(ma.photoshoot1-1.jpg)no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 95vh;
+}
+
+.main h3 {
+    padding-top: 30%;
+}
+.main h1{
+    font-size: 4.5rem;
+    font-weight: 600;
+}
+
+.main h6{
+    font-size: 2rem;
+    text-transform: uppercase;
+    line-height: 1;
+    text-decoration: underline purple;
+    width: 40%;  
+}
+
+/*About*/
+div.aboutme {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 5%;
+  }
+
+.modal img{
+    width: 5%;
+    height: 5%;
+}
+
+/* Education */
+
+#poloroidRow {
+    padding-bottom: 5%;
+}
+
+#level5 {
+    width: 284px;
+    background-color: white;
+    padding: 10px 10px 20px 10px;float: left;
+    border: 1px solid #BFBFBF;
+    margin-right: 5%;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    
+    transform: rotate(7deg);
+}
+
+#secondary {
+    width: 284px;
+    padding: 10px 10px 20px 10px;
+    border: 1px solid #BFBFBF;
+    background-color: white;
+    margin-left: 5%;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    float: left;
+    transform: rotate(-8deg);
+}
+
+/*Skills*/
+
+#skills img {
+    width: 60%;
+    height: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#IT {
+    padding-top: 8%;
+}
+#APP {
+    padding-top: 8%;
+}
+
+/* My Work */
+
+.slides {
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 2px 2px 5px black;
+}
+
+.carousel-control-prev {
+    color: black;
+}
+
+.carousel-control-next {
+    color: black;
+}
