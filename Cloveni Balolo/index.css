@@ -1,10 +1,17 @@
+
 /*Main*/
 
 .main {
-    background: url("photoshoot1-1.jpg")no-repeat;
+    background: url("portfoliopics/main.png")no-repeat;
     background-size: cover;
     width: 100%;
-    height: 95vh;
+    height: 100%;
+     
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+   
+
 }
 
 .main h3 {
@@ -23,78 +30,264 @@
     width: 40%;  
 }
 
-/*About*/
-div.aboutme {
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-bottom: 5%;
+/*BIO*/
+.bio-image img {
+  width: 80%;
+  height: 80%;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  padding: 2%;
+  margin-left: 5%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.bio-image img:hover {
+  transform: scale(1.05);
+}
+
+.bio-text h2 {
+  margin-top: 0;
+}
+
+.bio-text p {
+  margin-right: 50%;
+}
+@media (max-width: 768px) {
+  .biography {
+    flex-direction: column;
   }
 
-.modal img{
-    width: 5%;
-    height: 5%;
+  .bio-image, .bio-text {
+    margin-bottom: 20px;
+  }
 }
 
-/* Education */
 
-#poloroidRow {
-    padding-bottom: 5%;
+
+/*Education*/
+
+.image-column img {
+  width: 60%;
+  height: 60%;
+  margin-bottom: 15px;
+  margin-left: 25%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
-#level5 {
-    width: 284px;
-    background-color: white;
-    padding: 10px 10px 20px 10px;float: left;
-    border: 1px solid #BFBFBF;
-    margin-right: 5%;
-    box-shadow: 10px 10px 5px #aaaaaa;
-    
-    transform: rotate(7deg);
+
+.image-column img:hover {
+  transform: scale(1.05);
 }
 
-#secondary {
-    width: 284px;
-    padding: 10px 10px 20px 10px;
-    border: 1px solid #BFBFBF;
-    background-color: white;
-    margin-left: 5%;
-    box-shadow: 10px 10px 5px #aaaaaa;
-    float: left;
-    transform: rotate(-8deg);
+.text-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
 }
 
-/*Skills*/
-
-#skills img {
-    width: 60%;
-    height: 60%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.my-section {
+  margin: 50px 0;
 }
 
-#IT {
-    padding-top: 8%;
-}
-#APP {
-    padding-top: 8%;
+.education {
+  margin-bottom: 5%;;
 }
 
-/* My Work */
-
-.slides {
-    width: 50%;
-    height: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-shadow: 2px 2px 5px black;
+.caption-text {
+  color: #ccc;
+  text-align: center;
+  padding: 10px;
+  font-size: 18px;
 }
 
-.carousel-control-prev {
-    color: black;
+/* Featured Work */
+
+
+/* Fade-in for main texts */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2s forwards;
 }
 
-.carousel-control-next {
-    color: black;
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Typewriter effect */
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid purple;
+  animation: typing 3s steps(40, end) forwards;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Slide-in from left for bio image */
+.slide-in {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slideIn 2s forwards;
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Fade-in for education images */
+.edu-fade-in {
+  opacity: 0;
+  animation: fadeInImages 2s forwards;
+}
+
+@keyframes fadeInImages {
+  to {
+    opacity: 1;
+  }
+}
+
+/*Featured Work*/
+.gallery {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+
+/*Contact*/
+
+.contact-icon {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.contact-icon:hover {
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------*/
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }   
+}  
+
+
+/*Modal*/
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1000; 
+  padding-top: 60px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: auto;
+  max-width: 90%;
+  height: auto;
+  max-height: 90vh;
+}
+
+
+/*Click image and expand*/
+.expandable-img {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.expandable-img:hover {
+  transform: scale(1.05);
+}
+
+@keyframes zoomIn {
+  from {transform: scale(0.8);}
+  to {transform: scale(1);}
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #ccc;
+}
+
+/* Scroll Fade-in */
+.fade-in-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
