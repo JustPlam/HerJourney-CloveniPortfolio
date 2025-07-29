@@ -59,3 +59,12 @@ document.addEventListener('DOMContentLoaded', () => {
     fadeInOnScroll.observe(fader);
   });
 });
+
+
+//parralaz scrol ios
+ const bg = document.getElementById("parallax-bg");
+
+  window.addEventListener("scroll", function () {
+    let offset = window.scrollY;
+    bg.style.transform = `translateY(${offset * 0.5}px)`;
+  });
