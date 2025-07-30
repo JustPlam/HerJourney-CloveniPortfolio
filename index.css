@@ -362,7 +362,8 @@ body {
     top: 2rem;
     left: 2rem;
     text-align: top center;
-    padding: 0;
+    padding-top: 30%;
+    padding-right: 10%;
     margin: 0;
   }
 
