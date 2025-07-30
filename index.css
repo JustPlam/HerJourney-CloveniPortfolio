@@ -387,7 +387,7 @@ body {
           margin-top: 50%;
   }
   .bio-text {
-    text-align: right;
+    max-width: 100;
     margin: 0 auto;
   }
 
