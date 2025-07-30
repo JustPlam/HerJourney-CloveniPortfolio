@@ -90,7 +90,13 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 20px;
+  padding:50%;
+}
+
+
+.bio-text {
+  max-width: 600px;
+  margin: 0 auto; /* Center it if needed */
 }
 
 
