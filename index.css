@@ -419,6 +419,7 @@ body {
   .main-text {
     padding-left: 0;
     padding-right: 0;
+    padding-bottom: 100%;
     margin: 0;
   }
 
