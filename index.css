@@ -412,7 +412,7 @@ body {
 
   /* For mobile phones(768) */
 
-@media (max-width: 768) { 
+@media (max-width: 768px) { 
   .main {
     height: 70vh;
     padding: 0;             /* remove side padding */
