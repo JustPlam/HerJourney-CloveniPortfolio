@@ -20,6 +20,7 @@ body {
   justify-content: center;
   text-align: left;
   margin-top: 6%;
+   position: relative;
 
   padding: 0 1rem;
 }
@@ -341,6 +342,8 @@ body {
     padding: 0 1rem;
     margin: 0;
     padding-top: 10%;
+    position: relative;
+    
   }
 
   .parallax-bg {
@@ -349,8 +352,12 @@ body {
   }
 
   .main-text {
-    padding-bottom: 1000%;
-    
+   position: absolute;
+    top: 2rem;
+    left: 2rem;
+    text-align: left;
+    padding: 0;
+    margin: 0;
   }
 
   .main-text h1 {
@@ -370,6 +377,9 @@ body {
     width: fit-content;
   }
 
+  .bio {
+          margin-top: 50%;
+  }
   .bio-text {
     text-align: center;
     margin: 0 auto;
