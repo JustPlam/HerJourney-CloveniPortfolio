@@ -387,7 +387,7 @@ body {
           margin-top: 50%;
   }
   .bio-text {
-    text-align: center;
+    text-align: right;
     margin: 0 auto;
   }
 
@@ -429,6 +429,7 @@ body {
     padding-left: 0;
     padding-right: 0;
     margin: 0;
+    
   }
 
   .main-text h1,
