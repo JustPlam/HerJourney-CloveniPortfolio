@@ -273,7 +273,7 @@ body {
   }
 
   .main-text {
-    padding-top: 100%;
+    padding-bottom: 200%;
     padding-left: 0;
     padding-right: 0;
     margin: 0;
@@ -298,6 +298,11 @@ body {
 
   .main-text h6 {
     font-size: 0.9rem;
+     text-decoration: underline purple;
+     text-transform: uppercase;
+    margin-top: 0.3rem;
+    width: fit-content;
+  }
   }
 
   .bio-text {
@@ -328,6 +333,66 @@ body {
     padding: 0;
   }
 }
+
+/* iPad 10th Gen Portrait (820 x 1180) */
+@media (min-width: 810px) and (max-width: 830px) and (orientation: portrait) {
+  .main {
+    height: 70vh;
+    padding: 0 1rem;
+    margin: 0;
+    padding-top: 10%;
+  }
+
+  .parallax-bg {
+    background-size: 280%;
+    background-position: 85% top;
+  }
+
+  .main-text {
+    padding-bottom: 200%;
+    
+  }
+
+  .main-text h1 {
+    font-size: 2rem;
+    -webkit-text-stroke: 0.6px white;
+  }
+
+  .main-text h3 {
+    font-size: 1rem;
+  }
+
+  .main-text h6 {
+    font-size: 0.9rem;
+    text-decoration: underline purple;
+     text-transform: uppercase;
+    margin-top: 0.3rem;
+    width: fit-content;
+  }
+
+  .bio-text {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .bio-text h2 {
+    text-align: center;
+    padding-right: 50%;
+  }
+
+  .bio-image {
+    object-position: center;
+  }
+
+  .education-stack {
+    margin-bottom: 50%;
+  }
+
+  .education-stack2 {
+    margin-bottom: 20%;
+  }
+}
+
   /* For mobile phones(768) */
 
 @media (max-width: 768) { 
@@ -419,7 +484,7 @@ body {
   .main-text {
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 100%;
+    padding-bottom: 150%;
     margin: 0;
   }
 
@@ -442,6 +507,10 @@ body {
 
   .main-text h6 {
     font-size: 0.9rem;
+    text-decoration: underline purple;
+     text-transform: uppercase;
+    margin-top: 0.3rem;
+    width: fit-content;
   }
 
   .bio-text {
