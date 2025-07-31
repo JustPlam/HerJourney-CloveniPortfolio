@@ -90,13 +90,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
-}
-
-
-.bio-text {
-  max-width: 600px;
-  margin: 0 auto; /* Center it if needed */
+  padding: 20px;
 }
 
 
@@ -280,11 +274,12 @@ body {
   }
 
   .main-text {
-    padding-bottom: 200%;
     padding-left: 0;
     padding-right: 0;
-    margin: 0;
+    margin:0;
   }
+
+
 
   .main-text h1,
   .main-text h3,
@@ -297,6 +292,7 @@ body {
   .main-text h1 {
     font-size: 2rem;
     -webkit-text-stroke: 0.6px white;
+    
   }
 
   .main-text h3 {
@@ -362,8 +358,7 @@ body {
     top: 2rem;
     left: 2rem;
     text-align: top center;
-    margin-top: 50%;
-    padding-right: 10%;
+    padding: 0;
     margin: 0;
   }
 
@@ -383,18 +378,24 @@ body {
     margin-top: 0.3rem;
     width: fit-content;
   }
+  .main-text1{
+    margin-top: 30%;
+    text-align: top center;
+    padding-right: 40%;
+  }
+
 
   .bio {
           margin-top: 50%;
   }
   .bio-text {
-    max-width: 100;
+    text-align: center;
     margin: 0 auto;
   }
 
   .bio-text h2 {
     text-align: center;
-  
+    padding-right: 50%;
   }
 
   .bio-image {
@@ -412,7 +413,7 @@ body {
 
   /* For mobile phones(768) */
 
-@media (max-width: 768px) { 
+@media (max-width: 768) { 
   .main {
     height: 70vh;
     padding: 0;             /* remove side padding */
@@ -430,7 +431,6 @@ body {
     padding-left: 0;
     padding-right: 0;
     margin: 0;
-    
   }
 
   .main-text h1,
@@ -455,7 +455,7 @@ body {
   }
 
   .bio-text {
-
+    text-align: center;
     margin: 0 auto;         /* center without left margin */
     width: 100%;
     padding: 0;
@@ -506,6 +506,12 @@ body {
     margin: 0;
   }
 
+  .main-text1{
+    margin-top: 30%;
+    text-align: top center;
+    padding-right: 40%;
+  }
+
   .main-text h1,
   .main-text h3,
   .main-text h6 {
@@ -532,7 +538,7 @@ body {
   }
 
   .bio-text {
-   
+    text-align: center;
     margin: 0 auto;         /* center without left margin */
     width: 100%;
     padding: 0;
