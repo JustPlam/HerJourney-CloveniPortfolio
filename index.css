@@ -383,24 +383,34 @@ body {
     text-align: top center;
     padding-right: 40%;
   }
+  
 
 
-  .bio {
-          margin-top: 50%;
-  }
-  .bio-text {
-    text-align: center;
+
+  .bio-text p{
     margin: 0 auto;
+    max-width: 400px;
+    text-align: center;
+
   }
 
   .bio-text h2 {
     text-align: center;
-    padding-right: 50%;
   }
 
   .bio-image {
-    object-position: center;
+    object-position: left;
+
   }
+
+  .polaroid {
+  background: white;
+  padding: 10px 10px 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  display: inline-block;
+}
+
 
   .education-stack {
     margin-bottom: 50%;
@@ -452,12 +462,6 @@ body {
 
   .main-text h6 {
     font-size: 0.9rem;
-  }
-
-  .main-text1{
-    margin-top: 30%;
-    text-align: top center;
-    padding-right: 40%;
   }
 
   .bio-text {
